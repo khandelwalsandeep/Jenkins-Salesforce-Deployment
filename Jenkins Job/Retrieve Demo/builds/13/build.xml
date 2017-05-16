@@ -26,7 +26,7 @@
               </branches>
             </marked>
             <revision reference="../marked"/>
-            <hudsonBuildNumber>6</hudsonBuildNumber>
+            <hudsonBuildNumber>13</hudsonBuildNumber>
           </hudson.plugins.git.util.Build>
         </entry>
       </buildsByBranchName>
@@ -46,11 +46,11 @@
     </hudson.plugins.git.GitTagAction>
     <hudson.scm.SCMRevisionState_-None/>
   </actions>
-  <queueId>6</queueId>
-  <timestamp>1494945343303</timestamp>
-  <startTime>1494945343307</startTime>
+  <queueId>13</queueId>
+  <timestamp>1494947087446</timestamp>
+  <startTime>1494947087450</startTime>
   <result>FAILURE</result>
-  <duration>22663</duration>
+  <duration>7983</duration>
   <charset>windows-1252</charset>
   <keepLog>false</keepLog>
   <builtOn></builtOn>

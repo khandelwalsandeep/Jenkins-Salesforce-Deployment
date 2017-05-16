@@ -26,11 +26,12 @@
               </branches>
             </marked>
             <revision reference="../marked"/>
-            <hudsonBuildNumber>6</hudsonBuildNumber>
+            <hudsonBuildNumber>12</hudsonBuildNumber>
           </hudson.plugins.git.util.Build>
         </entry>
       </buildsByBranchName>
       <lastBuild reference="../buildsByBranchName/entry/hudson.plugins.git.util.Build"/>
+      <scmName></scmName>
       <remoteUrls>
         <string>https://github.com/khandelwalsandeep/Saleforce-source-directory.git</string>
       </remoteUrls>
@@ -46,11 +47,11 @@
     </hudson.plugins.git.GitTagAction>
     <hudson.scm.SCMRevisionState_-None/>
   </actions>
-  <queueId>6</queueId>
-  <timestamp>1494945343303</timestamp>
-  <startTime>1494945343307</startTime>
+  <queueId>12</queueId>
+  <timestamp>1494946934274</timestamp>
+  <startTime>1494946934278</startTime>
   <result>FAILURE</result>
-  <duration>22663</duration>
+  <duration>32831</duration>
   <charset>windows-1252</charset>
   <keepLog>false</keepLog>
   <builtOn></builtOn>

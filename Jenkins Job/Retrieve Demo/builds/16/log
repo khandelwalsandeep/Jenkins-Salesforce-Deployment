@@ -1,0 +1,30 @@
+Started by user [8mha:////4PhywhyixIxq/DiD822LV27ksyqHhUY4NJ2Mu+UWQy0+AAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzWEgZu/dLi1CL9xJTczDwAj6GcLcAAAAA=[0madmin
+Building in workspace C:\Users\Sandeep665\.jenkins\workspace\Retrieve Demo
+ > git.exe rev-parse --is-inside-work-tree # timeout=10
+Fetching changes from the remote Git repository
+ > git.exe config remote.origin.url https://github.com/khandelwalsandeep/Saleforce-source-directory.git # timeout=10
+Fetching upstream changes from https://github.com/khandelwalsandeep/Saleforce-source-directory.git
+ > git.exe --version # timeout=10
+ > git.exe fetch --tags --progress https://github.com/khandelwalsandeep/Saleforce-source-directory.git +refs/heads/*:refs/remotes/origin/*
+ > git.exe rev-parse "refs/remotes/origin/master^{commit}" # timeout=10
+ > git.exe rev-parse "refs/remotes/origin/origin/master^{commit}" # timeout=10
+Checking out Revision 19c2c0965bf9df75e3402c2982907bdde8fef1a3 (refs/remotes/origin/master)
+ > git.exe config core.sparsecheckout # timeout=10
+ > git.exe checkout -f 19c2c0965bf9df75e3402c2982907bdde8fef1a3
+ > git.exe rev-list 19c2c0965bf9df75e3402c2982907bdde8fef1a3 # timeout=10
+[Saleforce Migration Tools] $ cmd.exe /C "ant.bat -file '"Retrieve Package"' git-push && exit %%ERRORLEVEL%%"
+Buildfile: C:\Users\Sandeep665\Desktop\Saleforce Migration Tools\Retrieve Package\build.xml
+
+[8mha:////4P3sPGhbF3bZDr5QbqDNByagQBSmIoBAnw7oIq88W7qrAAAAYB+LCAAAAAAAAP9b85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mgit-push:
+
+[8mha:////4DgPKp07tbmQ9bmKoJLt3ocLUq9AQLoJiMakyJqdAmfiAAAAYB+LCAAAAAAAAP9b85aBtbiIQSGjNKU4P0+vJLE4u1gvPjGvRM8xr8S/tCQ5PzfVL78ktUuDM0uMry+HiYGhoohBCqo8OT+vOD8nVc8ZQoMUMkAAI0hhAQAUXUdTXgAAAA==[0mBUILD FAILED
+C:\Users\Sandeep665\Desktop\Saleforce Migration Tools\Retrieve Package\build.xml:237: Problem: failed to create task or type git-remote-add
+Cause: The name is undefined.
+Action: Check the spelling.
+Action: Check that any custom tasks/types have been declared.
+Action: Check that any <presetdef>/<macrodef> declarations have taken place.
+
+
+Total time: 0 seconds
+Build step 'Invoke Ant' marked build as failure
+Finished: FAILURE

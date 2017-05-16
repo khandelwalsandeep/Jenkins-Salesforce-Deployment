@@ -27,10 +27,20 @@
 		retrieveTarget="describeMetadata"/>
 	</target>
 	
+	<!-- target to delete folder content before retrieval -->
+	<target name="deleteRetreiveFolder" description="Delete the retrieve folder before a retrieval">
+		<delete includeemptydirs="true">
+			<fileset dir="${retrieve.location}" includes="**/*" defaultexcludes="false">
+				
+			</fileset>
+		</delete>
+	</target>
+	
 	<target name="retrieveUnpackaged">
       <mkdir dir="retrieveUnpackaged"/>
       <!-- Retrieve the contents into another directory -->
       <sf:retrieve username="${sf.username}" password="${sf.password}" sessionId="${sf.sessionId}" serverurl="${sf.serverurl}" maxPoll="${sf.maxPoll}" retrieveTarget="retrieveUnpackaged" unpackaged="unpackaged/package.xml"/>
+	  
     </target>
 	
 	 <!-- Shows check only; never actually saves to the server -->
@@ -38,6 +48,7 @@
       <sf:deploy username="${sf.username}" password="${sf.password}" sessionId="${sf.sessionId}" serverurl="${sf.serverurl}" maxPoll="${sf.maxPoll}" deployRoot="retrieveUnpackaged" checkOnly="true"/>
     </target>
 	
+	<!--
 	<macrodef name = "git">
 		<attribute name = "command" />
 		<attribute name = "dir" default = "" />
@@ -50,7 +61,7 @@
 			</exec>
 		</sequential>
 	</macrodef>
-
+   
 	<macrodef name = "git-clone-pull">
 		<attribute name = "repository" />
 		<attribute name = "dest" />
@@ -64,7 +75,72 @@
 			<git command = "pull" dir = "@{dest}" />
 		</sequential>
 	</macrodef>
-
+	
+	<macrodef name="git-remote-add">
+		<attribute name = "add"/>
+		<attribute name = "name"/>
+		<attribute name = "URL"/>
+		<sequential>
+			<git command = "remote">
+				<args>
+					<arg value = "@{add}" />
+					<arg value = "@{name}" />
+					<arg value = "@{URL}" />
+				</args>	
+			</git>
+				
+		</sequential>
+	</macrodef>
+	
+	<macrodef name="git">
+		<attribute name="command" />
+		<attribute name="dir" default = ""/>
+		<element name="args" optional="true" />
+		<sequential>
+            <echo message="Executing Command in folder @{dir}" />
+            <echo message="git @{command}" />
+			<exec executable="git" dir="@{dir}">
+				<arg value="@{command}" />
+				<args/>
+			</exec>
+		</sequential>
+	</macrodef>
+	
+	<macrodef name="git-push">
+		<attribute name="parameter" />
+		<attribute name="origin"/>
+		<sequential>
+			<git command = "push">
+				<args>
+					<arg value = "@{parameter}" />
+					<arg value = "@{origin}" />
+				</args>	
+			</git>
+				
+		</sequential>
+	</macrodef>
+	<macrodef name = "git-add">
+		<attribute name="files"/>
+		<sequential>
+			<git command = "add">
+				<args>
+					<arg value = "@{files}" />
+				</args>
+			</git>
+		</sequential>
+	</macrodef>
+	
+	<macrodef name = "git-commit">
+		<attribute name="message"/>
+		<sequential>
+			<git command = "add">
+				<args>
+					<arg value = "@{files}" />
+				</args>
+			</git>
+		</sequential>
+	</macrodef>
+	
 	<target name="git-pull">
         <git command = "clone">
             <args>
@@ -74,4 +150,102 @@
         </git> 
     </target>
 	
+	<target name = "git-commit">
+		
+		<git-remote-add add="add" name="${git.repositoryName}" URL="${git.repositoryURL}" />
+		<git command="add" dir="C:\Users\Sandeep665\Desktop\Sfdc_Repo\Saleforce-source-directory">
+				<args>
+					<arg value="." />
+				</args>
+		</git>
+		<git command="commit" dir="C:\Users\Sandeep665\Desktop\Sfdc_Repo\Saleforce-source-directory">
+				<args>
+					<arg value="-am ${git.commitMessage}" />
+				</args>
+		</git>
+		
+	</target>
+	
+	<target name = "git-push">
+		<git-push parameter="origin" origin = "master" />
+	</target>
+	-->
+	
+	<macrodef name = "git">
+		<attribute name = "command" />
+		<attribute name = "dir" default = "${retrieve.location}" />
+		<element name = "args" optional = "true" />
+		<sequential>
+			<echo message = "git @{command}" />
+			<exec executable = "git" dir = "@{dir}">
+				<arg value = "@{command}" />
+				<args/>
+			</exec>
+		</sequential>
+	</macrodef>
+   
+	<macrodef name = "git-clone-pull">
+		<attribute name = "repository" />
+		<attribute name = "dest" />
+		<sequential>
+			<git command = "clone">
+				<args>
+					<arg value = "@{repository}" />
+					<arg value = "@{dest}" />
+				</args>
+			</git>
+			<git command = "pull" dir = "@{dest}" />
+		</sequential>
+	</macrodef>
+	
+	<target name="git-pull">
+        <git command = "clone">
+            <args>
+                <arg value = "${git.repositoryURL}" />
+                <arg value = "${retrieve.location}" />
+            </args>
+        </git> 
+    </target>
+	
+	<target name="copy-dir" description="Copy from src to dst">
+		<copy todir="C:\Users\Sandeep665\Desktop\Sfdc_Repo\Saleforce-source-directory\" >  
+        <fileset dir="C:\Users\Sandeep665\Desktop\Saleforce Migration Tools\Retrieve Package\retrieveUnpackaged\" includes="**"/>  
+		</copy> 
+	</target>
+	
+	
+
+	<macrodef name="git-remote-add">
+		<attribute name = "add"/>
+		<attribute name = "name"/>
+		<attribute name = "URL"/>
+		<sequential>
+			<git command = "remote">
+				<args>
+					<arg value = "@{add}" />
+					<arg value = "@{name}" />
+					<arg value = "@{URL}" />
+				</args>	
+			</git>
+				
+		</sequential>
+	</macrodef>
+
+	<target name="git-push" description="Commits all changes to version git">
+		<!--git-remote-add add="add" name="${git.repositoryName}" URL="${git.repositoryURL}" />-->
+		<!--input message="Commit message" addproperty="commit-message" />-->
+		
+		<echo message="Commiting all changes with message ${commit-message}" />
+		<git command="add">
+			<args>
+				<arg value="." />
+			</args>
+		</git>
+		<git command="commit">
+			<args>
+				<arg value="-am Salesforce-Git update" />
+			</args>
+		</git>
+		<git command="push" />
+	</target>
 </project>	

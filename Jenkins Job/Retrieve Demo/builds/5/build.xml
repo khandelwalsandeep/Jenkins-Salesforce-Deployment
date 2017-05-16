@@ -13,14 +13,14 @@
     </hudson.model.CauseAction>
   </actions>
   <queueId>5</queueId>
-  <timestamp>1494874769900</timestamp>
-  <startTime>1494874769903</startTime>
-  <result>SUCCESS</result>
-  <duration>18876</duration>
+  <timestamp>1494945195136</timestamp>
+  <startTime>1494945195142</startTime>
+  <result>FAILURE</result>
+  <duration>16513</duration>
   <charset>windows-1252</charset>
   <keepLog>false</keepLog>
   <builtOn></builtOn>
-  <workspace>C:\Program Files (x86)\Jenkins\workspace\Retrieve Demo</workspace>
+  <workspace>C:\Users\Sandeep665\.jenkins\workspace\Retrieve Demo</workspace>
   <hudsonVersion>2.46.2</hudsonVersion>
   <scm class="hudson.scm.NullChangeLogParser"/>
   <culprits class="com.google.common.collect.EmptyImmutableSortedSet"/>

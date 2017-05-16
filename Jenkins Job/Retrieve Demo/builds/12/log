@@ -1,17 +1,31 @@
 Started by user [8mha:////4PhywhyixIxq/DiD822LV27ksyqHhUY4NJ2Mu+UWQy0+AAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzWEgZu/dLi1CL9xJTczDwAj6GcLcAAAAA=[0madmin
 Building in workspace C:\Users\Sandeep665\.jenkins\workspace\Retrieve Demo
+ > git.exe rev-parse --is-inside-work-tree # timeout=10
+Fetching changes from the remote Git repository
+ > git.exe config remote.origin.url https://github.com/khandelwalsandeep/Saleforce-source-directory.git # timeout=10
+Fetching upstream changes from https://github.com/khandelwalsandeep/Saleforce-source-directory.git
+ > git.exe --version # timeout=10
+ > git.exe fetch --tags --progress https://github.com/khandelwalsandeep/Saleforce-source-directory.git +refs/heads/*:refs/remotes/origin/*
+ > git.exe rev-parse "refs/remotes/origin/master^{commit}" # timeout=10
+ > git.exe rev-parse "refs/remotes/origin/origin/master^{commit}" # timeout=10
+Checking out Revision 19c2c0965bf9df75e3402c2982907bdde8fef1a3 (refs/remotes/origin/master)
+ > git.exe config core.sparsecheckout # timeout=10
+ > git.exe checkout -f 19c2c0965bf9df75e3402c2982907bdde8fef1a3
+ > git.exe rev-list 19c2c0965bf9df75e3402c2982907bdde8fef1a3 # timeout=10
 [Saleforce Migration Tools] $ cmd.exe /C "ant.bat -file '"Retrieve Package"' retrieveUnpackaged copy-dir git-push && exit %%ERRORLEVEL%%"
 Buildfile: C:\Users\Sandeep665\Desktop\Saleforce Migration Tools\Retrieve Package\build.xml
 
 [8mha:////4P3sPGhbF3bZDr5QbqDNByagQBSmIoBAnw7oIq88W7qrAAAAYB+LCAAAAAAAAP9b85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mretrieveUnpackaged:
 [sf:retrieve] Request for a retrieve submitted successfully.
-[sf:retrieve] Request ID for the current retrieve task: 09S28000004ZhrCEAS
+[sf:retrieve] Request ID for the current retrieve task: 09S28000004Zhs0EAC
 [sf:retrieve] Waiting for server to finish processing the request...
+[sf:retrieve] Request Status: Pending
+[sf:retrieve] Request Status: Pending
 [sf:retrieve] Request Status: Succeeded
-[sf:retrieve] Finished request 09S28000004ZhrCEAS successfully.
+[sf:retrieve] Finished request 09S28000004Zhs0EAC successfully.
 
 [8mha:////4P3sPGhbF3bZDr5QbqDNByagQBSmIoBAnw7oIq88W7qrAAAAYB+LCAAAAAAAAP9b85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mcopy-dir:
-     [copy] Copying 201 files to C:\Users\Sandeep665\Desktop\Sfdc_Repo\Saleforce-source-directory
+     [copy] Copying 181 files to C:\Users\Sandeep665\Desktop\Sfdc_Repo\Saleforce-source-directory
 
 [8mha:////4P3sPGhbF3bZDr5QbqDNByagQBSmIoBAnw7oIq88W7qrAAAAYB+LCAAAAAAAAP9b85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mgit-push:
      [echo] git remote
@@ -83,6 +97,6 @@ Caused by: java.io.IOException: CreateProcess error=2, The system cannot find th
 	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1029)
 	... 55 more
 
-Total time: 15 seconds
+Total time: 30 seconds
 Build step 'Invoke Ant' marked build as failure
 Finished: FAILURE

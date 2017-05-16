@@ -1,10 +1,25 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <project>
   <actions/>
-  <description>Demo for retrieve from Salesforce Org</description>
+  <description></description>
   <keepDependencies>false</keepDependencies>
   <properties/>
-  <scm class="hudson.scm.NullSCM"/>
+  <scm class="hudson.plugins.git.GitSCM" plugin="git@3.3.0">
+    <configVersion>2</configVersion>
+    <userRemoteConfigs>
+      <hudson.plugins.git.UserRemoteConfig>
+        <url>https://github.com/khandelwalsandeep/Saleforce-source-directory.git</url>
+      </hudson.plugins.git.UserRemoteConfig>
+    </userRemoteConfigs>
+    <branches>
+      <hudson.plugins.git.BranchSpec>
+        <name>*/master</name>
+      </hudson.plugins.git.BranchSpec>
+    </branches>
+    <doGenerateSubmoduleConfigurations>false</doGenerateSubmoduleConfigurations>
+    <submoduleCfg class="list"/>
+    <extensions/>
+  </scm>
   <canRoam>true</canRoam>
   <disabled>false</disabled>
   <blockBuildWhenDownstreamBuilding>false</blockBuildWhenDownstreamBuilding>
@@ -13,8 +28,10 @@
   <concurrentBuild>false</concurrentBuild>
   <builders>
     <hudson.tasks.Ant plugin="ant@1.5">
-      <targets>retrieveUnpackaged deployCodeCheckOnly</targets>
-      <buildFile>C:\Users\Sandeep665\Desktop\Saleforce Migration Tools\salesforce_ant_39.0\sample</buildFile>
+      <targets>retrieveUnpackaged
+copy-dir
+git-push</targets>
+      <buildFile>C:\Users\Sandeep665\Desktop\Saleforce Migration Tools\Retrieve Package\</buildFile>
     </hudson.tasks.Ant>
   </builders>
   <publishers/>
