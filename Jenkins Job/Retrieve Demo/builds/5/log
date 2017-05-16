@@ -1,0 +1,16 @@
+Started by user [8mha:////4JQT4COZpqoCEyEFvAN1zhHt6YvMxALZa+WF6bBkE2bFAAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzWEgZu/dLi1CL9xJTczDwAj6GcLcAAAAA=[0madmin
+Building in workspace C:\Program Files (x86)\Jenkins\workspace\Retrieve Demo
+[salesforce_ant_39.0] $ cmd.exe /C "ant.bat -file sample retrieveUnpackaged && exit %%ERRORLEVEL%%"
+Buildfile: C:\Users\Sandeep665\Desktop\Saleforce Migration Tools\salesforce_ant_39.0\sample\build.xml
+
+[8mha:////4EhUC0VsXC/EKS2YbuOYWclrkd0GLB/uqnipgf2yus8HAAAAYB+LCAAAAAAAAP9b85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mretrieveUnpackaged:
+[sf:retrieve] Request for a retrieve submitted successfully.
+[sf:retrieve] Request ID for the current retrieve task: 09S28000004Zh7xEAC
+[sf:retrieve] Waiting for server to finish processing the request...
+[sf:retrieve] Request Status: InProgress
+[sf:retrieve] Request Status: Succeeded
+[sf:retrieve] Finished request 09S28000004Zh7xEAC successfully.
+
+[8mha:////4OTsUpmQ6aviQIzZm9DCjvk1K86gL8rCVDGZ6vyGVdvyAAAAYB+LCAAAAAAAAP9b85aBtbiIQSGjNKU4P0+vJLE4u1gvPjGvRM8xr8S/tCQ5PzfVL78ktUuDM0uMry+HiYGhoohBCqo8OT+vOD8nVc8ZQoMUMkAAI0hhAQAUXUdTXgAAAA==[0mBUILD SUCCESSFUL
+Total time: 18 seconds
+Finished: SUCCESS

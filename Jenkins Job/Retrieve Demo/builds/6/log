@@ -1,0 +1,23 @@
+Started by user [8mha:////4JQT4COZpqoCEyEFvAN1zhHt6YvMxALZa+WF6bBkE2bFAAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzWEgZu/dLi1CL9xJTczDwAj6GcLcAAAAA=[0madmin
+Building in workspace C:\Program Files (x86)\Jenkins\workspace\Retrieve Demo
+[salesforce_ant_39.0] $ cmd.exe /C "ant.bat -file sample retrieveUnpackaged deployCodeCheckOnly && exit %%ERRORLEVEL%%"
+Buildfile: C:\Users\Sandeep665\Desktop\Saleforce Migration Tools\salesforce_ant_39.0\sample\build.xml
+
+[8mha:////4EhUC0VsXC/EKS2YbuOYWclrkd0GLB/uqnipgf2yus8HAAAAYB+LCAAAAAAAAP9b85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mretrieveUnpackaged:
+[sf:retrieve] Request for a retrieve submitted successfully.
+[sf:retrieve] Request ID for the current retrieve task: 09S28000004Zh82EAC
+[sf:retrieve] Waiting for server to finish processing the request...
+[sf:retrieve] Request Status: Pending
+[sf:retrieve] Request Status: Succeeded
+[sf:retrieve] Finished request 09S28000004Zh82EAC successfully.
+
+[8mha:////4EhUC0VsXC/EKS2YbuOYWclrkd0GLB/uqnipgf2yus8HAAAAYB+LCAAAAAAAAP9b85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mdeployCodeCheckOnly:
+[sf:deploy] Request for a deploy submitted successfully.
+[sf:deploy] Request ID for the current deploy task: 0Af2800000cmnnUCAQ
+[sf:deploy] Waiting for server to finish processing the request...
+[sf:deploy] Request Status: Pending
+[sf:deploy] Request Status: InProgress (0/71)  -- Processing Type: ApexClass
+[sf:deploy] Request Status: InProgress (0/71)  -- Processing Type: ApexClass
+Build was aborted
+Aborted by [8mha:////4JQT4COZpqoCEyEFvAN1zhHt6YvMxALZa+WF6bBkE2bFAAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzWEgZu/dLi1CL9xJTczDwAj6GcLcAAAAA=[0madmin
+Finished: ABORTED
