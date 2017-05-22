@@ -171,6 +171,20 @@
 	</target>
 	-->
 	
+	<macrodef name="git-push">
+		<attribute name="parameter" />
+		<attribute name="origin"/>
+		<sequential>
+			<git command = "push">
+				<args>
+					<arg value = "@{parameter}" />
+					<arg value = "@{origin}" />
+				</args>	
+			</git>
+				
+		</sequential>
+	</macrodef>
+	
 	<macrodef name = "git">
 		<attribute name = "command" />
 		<attribute name = "dir" default = "${retrieve.location}" />
@@ -232,7 +246,8 @@
 	</macrodef>
 
 	<target name="git-push" description="Commits all changes to version git">
-		<!--git-remote-add add="add" name="${git.repositoryName}" URL="${git.repositoryURL}" />-->
+		<git command="init" />
+		<git-remote-add add="add" name="${git.repositoryName}" URL="${git.repositoryURL}" />
 		<!--input message="Commit message" addproperty="commit-message" />-->
 		
 		<echo message="Commiting all changes with message ${commit-message}" />
@@ -243,9 +258,10 @@
 		</git>
 		<git command="commit">
 			<args>
-				<arg value="-am Salesforce-Git update" />
+				<arg value="-m" /> 
+				<arg value="Backup" />
 			</args>
 		</git>
-		<git command="push" />
+		<git-push parameter="origin" origin = "master" />
 	</target>
 </project>	
