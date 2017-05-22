@@ -1,0 +1,413 @@
+Started by an SCM change
+Building in workspace C:\Users\Sandeep665\.jenkins\workspace\Daily Backup Salesforce
+ > git.exe rev-parse --is-inside-work-tree # timeout=10
+Fetching changes from the remote Git repository
+ > git.exe config remote.origin.url https://github.com/khandelwalsandeep/Salesforce_Backup.git # timeout=10
+Fetching upstream changes from https://github.com/khandelwalsandeep/Salesforce_Backup.git
+ > git.exe --version # timeout=10
+ > git.exe fetch --tags --progress https://github.com/khandelwalsandeep/Salesforce_Backup.git +refs/heads/*:refs/remotes/origin/*
+ > git.exe rev-parse "refs/remotes/origin/master^{commit}" # timeout=10
+ > git.exe rev-parse "refs/remotes/origin/origin/master^{commit}" # timeout=10
+Checking out Revision 3636d30fe2747d0286806ad17f07ebb2d1236773 (refs/remotes/origin/master)
+ > git.exe config core.sparsecheckout # timeout=10
+ > git.exe checkout -f 3636d30fe2747d0286806ad17f07ebb2d1236773
+ > git.exe rev-list 1c09e7db8d9f80a8452fe6c8aee994fcf7bc0aa6 # timeout=10
+[Saleforce Migration Tools] $ cmd.exe /C "ant.bat -file '"Retrieve Package"' retrieveUnpackaged git-push && exit %%ERRORLEVEL%%"
+Buildfile: C:\Users\Sandeep665\Desktop\Saleforce Migration Tools\Retrieve Package\build.xml
+
+[8mha:////4P3sPGhbF3bZDr5QbqDNByagQBSmIoBAnw7oIq88W7qrAAAAYB+LCAAAAAAAAP9b85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mretrieveUnpackaged:
+[sf:retrieve] Request for a retrieve submitted successfully.
+[sf:retrieve] Request ID for the current retrieve task: 09S28000004ZlYEEA0
+[sf:retrieve] Waiting for server to finish processing the request...
+[sf:retrieve] Request Status: Pending
+[sf:retrieve] Request Status: Succeeded
+[sf:retrieve] Finished request 09S28000004ZlYEEA0 successfully.
+
+[8mha:////4P3sPGhbF3bZDr5QbqDNByagQBSmIoBAnw7oIq88W7qrAAAAYB+LCAAAAAAAAP9b85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mgit-push:
+     [echo] git init
+     [exec] Reinitialized existing Git repository in C:/Users/Sandeep665/Desktop/Saleforce Migration Tools/Retrieve Package/retrieveUnpackaged/.git/
+     [echo] git remote
+     [exec] fatal: remote origin already exists.
+     [exec] Result: 128
+     [echo] Commiting all changes with message ${commit-message}
+     [echo] git add
+     [exec] warning: LF will be replaced by CRLF in classes/AccountHandler.cls.
+     [exec] The file will have its original line endings in your working directory.
+     [exec] warning: LF will be replaced by CRLF in classes/AccountHandler.cls-meta.xml.
+     [exec] The file will have its original line endings in your working directory.
+     [exec] warning: LF will be replaced by CRLF in classes/AccountHandler_Test.cls.
+     [exec] The file will have its original line endings in your working directory.
+     [exec] warning: LF will be replaced by CRLF in classes/AccountHandler_Test.cls-meta.xml.
+     [exec] The file will have its original line endings in your working directory.
+     [exec] warning: LF will be replaced by CRLF in classes/AccountManagementController.cls.
+     [exec] The file will have its original line endings in your working directory.
+     [exec] warning: LF will be replaced by CRLF in classes/AccountManagementController.cls-meta.xml.
+     [exec] The file will have its original line endings in your working directory.
+     [exec] warning: LF will be replaced by CRLF in classes/AccountManager.cls.
+     [exec] The file will have its original line endings in your working directory.
+     [exec] warning: LF will be replaced by CRLF in classes/AccountManager.cls-meta.xml.
+     [exec] The file will have its original line endings in your working directory.
+     [exec] warning: LF will be replaced by CRLF in classes/AccountManagerTest.cls.
+     [exec] The file will have its original line endings in your working directory.
+     [exec] warning: LF will be replaced by CRLF in classes/AccountManagerTest.cls-meta.xml.
+     [exec] The file will have its original line endings in your working directory.
+     [exec] warning: LF will be replaced by CRLF in classes/AccountProcessor.cls.
+     [exec] The file will have its original line endings in your working directory.
+     [exec] warning: LF will be replaced by CRLF in classes/AccountProcessor.cls-meta.xml.
+     [exec] The file will have its original line endings in your working directory.
+     [exec] warning: LF will be replaced by CRLF in classes/AccountProcessorTest.cls.
+     [exec] The file will have its original line endings in your working directory.
+     [exec] warning: LF will be replaced by CRLF in classes/AccountProcessorTest.cls-meta.xml.
+     [exec] The file will have its original line endings in your working directory.
+     [exec] warning: LF will be replaced by CRLF in classes/AddPrimaryContact.cls.
+     [exec] The file will have its original line endings in your working directory.
+     [exec] warning: LF will be replaced by CRLF in classes/AddPrimaryContact.cls-meta.xml.
+     [exec] The file will have its original line endings in your working directory.
+     [exec] warning: LF will be replaced by CRLF in classes/AddPrimaryContactTest.cls.
+     [exec] The file will have its original line endings in your working directory.
+     [exec] warning: LF will be replaced by CRLF in classes/AddPrimaryContactTest.cls-meta.xml.
+     [exec] The file will have its original line endings in your working directory.
+     [exec] warning: LF will be replaced by CRLF in classes/AnimalLocator.cls.
+     [exec] The file will have its original line endings in your working directory.
+     [exec] warning: LF will be replaced by CRLF in classes/AnimalLocator.cls-meta.xml.
+     [exec] The file will have its original line endings in your working directory.
+     [exec] warning: LF will be replaced by CRLF in classes/AnimalLocatorMock.cls.
+     [exec] The file will have its original line endings in your working directory.
+     [exec] warning: LF will be replaced by CRLF in classes/AnimalLocatorMock.cls-meta.xml.
+     [exec] The file will have its original line endings in your working directory.
+     [exec] warning: LF will be replaced by CRLF in classes/AnimalLocatorTest.cls.
+     [exec] The file will have its original line endings in your working directory.
+     [exec] warning: LF will be replaced by CRLF in classes/AnimalLocatorTest.cls-meta.xml.
+     [exec] The file will have its original line endings in your working directory.
+     [exec] warning: LF will be replaced by CRLF in classes/Animal_Test.cls.
+     [exec] The file will have its original line endings in your working directory.
+     [exec] warning: LF will be replaced by CRLF in classes/Animal_Test.cls-meta.xml.
+     [exec] The file will have its original line endings in your working directory.
+     [exec] warning: LF will be replaced by CRLF in classes/AnimalsCallouts.cls.
+     [exec] The file will have its original line endings in your working directory.
+     [exec] warning: LF will be replaced by CRLF in classes/AnimalsCallouts.cls-meta.xml.
+     [exec] The file will have its original line endings in your working directory.
+     [exec] warning: LF will be replaced by CRLF in classes/AnimalsCalloutsTest.cls.
+     [exec] The file will have its original line endings in your working directory.
+     [exec] warning: LF will be replaced by CRLF in classes/AnimalsCalloutsTest.cls-meta.xml.
+     [exec] The file will have its original line endings in your working directory.
+     [exec] warning: LF will be replaced by CRLF in classes/AnimalsHttpCalloutMock.cls.
+     [exec] The file will have its original line endings in your working directory.
+     [exec] warning: LF will be replaced by CRLF in classes/AnimalsHttpCalloutMock.cls-meta.xml.
+     [exec] The file will have its original line endings in your working directory.
+     [exec] warning: LF will be replaced by CRLF in classes/AsyncCalculatorServices.cls.
+     [exec] The file will have its original line endings in your working directory.
+     [exec] warning: LF will be replaced by CRLF in classes/AsyncCalculatorServices.cls-meta.xml.
+     [exec] The file will have its original line endings in your working directory.
+     [exec] warning: LF will be replaced by CRLF in classes/AsyncParkService.cls.
+     [exec] The file will have its original line endings in your working directory.
+     [exec] warning: LF will be replaced by CRLF in classes/AsyncParkService.cls-meta.xml.
+     [exec] The file will have its original line endings in your working directory.
+     [exec] warning: LF will be replaced by CRLF in classes/AwesomeCalculator.cls.
+     [exec] The file will have its original line endings in your working directory.
+     [exec] warning: LF will be replaced by CRLF in classes/AwesomeCalculator.cls-meta.xml.
+     [exec] The file will have its original line endings in your working directory.
+     [exec] warning: LF will be replaced by CRLF in classes/AwesomeCalculatorTest.cls.
+     [exec] The file will have its original line endings in your working directory.
+     [exec] warning: LF will be replaced by CRLF in classes/AwesomeCalculatorTest.cls-meta.xml.
+     [exec] The file will have its original line endings in your working directory.
+     [exec] warning: LF will be replaced by CRLF in classes/BulkOpportunity.cls.
+     [exec] The file will have its original line endings in your working directory.
+     [exec] warning: LF will be replaced by CRLF in classes/BulkOpportunity.cls-meta.xml.
+     [exec] The file will have its original line endings in your working directory.
+     [exec] warning: LF will be replaced by CRLF in classes/CalculatorCalloutMock.cls.
+     [exec] The file will have its original line endings in your working directory.
+     [exec] warning: LF will be replaced by CRLF in classes/CalculatorCalloutMock.cls-meta.xml.
+     [exec] The file will have its original line endings in your working directory.
+     [exec] warning: LF will be replaced by CRLF in classes/CampaignManagementController.cls.
+     [exec] The file will have its original line endings in your working directory.
+     [exec] warning: LF will be replaced by CRLF in classes/CampaignManagementController.cls-meta.xml.
+     [exec] The file will have its original line endings in your working directory.
+     [exec] warning: LF will be replaced by CRLF in classes/CaseManager.cls.
+     [exec] The file will have its original line endings in your working directory.
+     [exec] warning: LF will be replaced by CRLF in classes/CaseManager.cls-meta.xml.
+     [exec] The file will have its original line endings in your working directory.
+     [exec] warning: LF will be replaced by CRLF in classes/CaseManagerTest.cls.
+     [exec] The file will have its original line endings in your working directory.
+     [exec] warning: LF will be replaced by CRLF in classes/CaseManagerTest.cls-meta.xml.
+     [exec] The file will have its original line endings in your working directory.
+     [exec] warning: LF will be replaced by CRLF in classes/ContactSearch.cls.
+     [exec] The file will have its original line endings in your working directory.
+     [exec] warning: LF will be replaced by CRLF in classes/ContactSearch.cls-meta.xml.
+     [exec] The file will have its original line endings in your working directory.
+     [exec] warning: LF will be replaced by CRLF in classes/CreateChildOpportunitiesController.cls.
+     [exec] The file will have its original line endings in your working directory.
+     [exec] warning: LF will be replaced by CRLF in classes/CreateChildOpportunitiesController.cls-meta.xml.
+     [exec] The file will have its original line endings in your working directory.
+     [exec] warning: LF will be replaced by CRLF in classes/DailyLeadProcessor.cls.
+     [exec] The file will have its original line endings in your working directory.
+     [exec] warning: LF will be replaced by CRLF in classes/DailyLeadProcessor.cls-meta.xml.
+     [exec] The file will have its original line endings in your working directory.
+     [exec] warning: LF will be replaced by CRLF in classes/DailyLeadProcessorTest.cls.
+     [exec] The file will have its original line endings in your working directory.
+     [exec] warning: LF will be replaced by CRLF in classes/DailyLeadProcessorTest.cls-meta.xml.
+     [exec] The file will have its original line endings in your working directory.
+     [exec] warning: LF will be replaced by CRLF in classes/EmailManager.cls.
+     [exec] The file will have its original line endings in your working directory.
+     [exec] warning: LF will be replaced by CRLF in classes/EmailManager.cls-meta.xml.
+     [exec] The file will have its original line endings in your working directory.
+     [exec] warning: LF will be replaced by CRLF in classes/HotelRemoter.cls.
+     [exec] The file will have its original line endings in your working directory.
+     [exec] warning: LF will be replaced by CRLF in classes/HotelRemoter.cls-meta.xml.
+     [exec] The file will have its original line endings in your working directory.
+     [exec] warning: LF will be replaced by CRLF in classes/InsertAccount.cls.
+     [exec] The file will have its original line endings in your working directory.
+     [exec] warning: LF will be replaced by CRLF in classes/InsertAccount.cls-meta.xml.
+     [exec] The file will have its original line endings in your working directory.
+     [exec] warning: LF will be replaced by CRLF in classes/LeadProcessor.cls.
+     [exec] The file will have its original line endings in your working directory.
+     [exec] warning: LF will be replaced by CRLF in classes/LeadProcessor.cls-meta.xml.
+     [exec] The file will have its original line endings in your working directory.
+     [exec] warning: LF will be replaced by CRLF in classes/LeadProcessorTest.cls.
+     [exec] The file will have its original line endings in your working directory.
+     [exec] warning: LF will be replaced by CRLF in classes/LeadProcessorTest.cls-meta.xml.
+     [exec] The file will have its original line endings in your working directory.
+     [exec] warning: LF will be replaced by CRLF in classes/LockAccount.cls.
+     [exec] The file will have its original line endings in your working directory.
+     [exec] warning: LF will be replaced by CRLF in classes/LockAccount.cls-meta.xml.
+     [exec] The file will have its original line endings in your working directory.
+     [exec] warning: LF will be replaced by CRLF in classes/LockTest.cls.
+     [exec] The file will have its original line endings in your working directory.
+     [exec] warning: LF will be replaced by CRLF in classes/LockTest.cls-meta.xml.
+     [exec] The file will have its original line endings in your working directory.
+     [exec] warning: LF will be replaced by CRLF in classes/MasterChild.cls.
+     [exec] The file will have its original line endings in your working directory.
+     [exec] warning: LF will be replaced by CRLF in classes/MasterChild.cls-meta.xml.
+     [exec] The file will have its original line endings in your working directory.
+     [exec] warning: LF will be replaced by CRLF in classes/MyClass.cls.
+     [exec] The file will have its original line endings in your working directory.
+     [exec] warning: LF will be replaced by CRLF in classes/MyClass.cls-meta.xml.
+     [exec] The file will have its original line endings in your working directory.
+     [exec] warning: LF will be replaced by CRLF in classes/OlderAccountsUtility.cls.
+     [exec] The file will have its original line endings in your working directory.
+     [exec] warning: LF will be replaced by CRLF in classes/OlderAccountsUtility.cls-meta.xml.
+     [exec] The file will have its original line endings in your working directory.
+     [exec] warning: LF will be replaced by CRLF in classes/Pagination.cls.
+     [exec] The file will have its original line endings in your working directory.
+     [exec] warning: LF will be replaced by CRLF in classes/Pagination.cls-meta.xml.
+     [exec] The file will have its original line endings in your working directory.
+     [exec] warning: LF will be replaced by CRLF in classes/ParkLocator.cls.
+     [exec] The file will have its original line endings in your working directory.
+     [exec] warning: LF will be replaced by CRLF in classes/ParkLocator.cls-meta.xml.
+     [exec] The file will have its original line endings in your working directory.
+     [exec] warning: LF will be replaced by CRLF in classes/ParkLocatorTest.cls.
+     [exec] The file will have its original line endings in your working directory.
+     [exec] warning: LF will be replaced by CRLF in classes/ParkLocatorTest.cls-meta.xml.
+     [exec] The file will have its original line endings in your working directory.
+     [exec] warning: LF will be replaced by CRLF in classes/ParkService.cls.
+     [exec] The file will have its original line endings in your working directory.
+     [exec] warning: LF will be replaced by CRLF in classes/ParkService.cls-meta.xml.
+     [exec] The file will have its original line endings in your working directory.
+     [exec] warning: LF will be replaced by CRLF in classes/ParkServiceMock.cls.
+     [exec] The file will have its original line endings in your working directory.
+     [exec] warning: LF will be replaced by CRLF in classes/ParkServiceMock.cls-meta.xml.
+     [exec] The file will have its original line endings in your working directory.
+     [exec] warning: LF will be replaced by CRLF in classes/RandomContactFactory.cls.
+     [exec] The file will have its original line endings in your working directory.
+     [exec] warning: LF will be replaced by CRLF in classes/RandomContactFactory.cls-meta.xml.
+     [exec] The file will have its original line endings in your working directory.
+     [exec] warning: LF will be replaced by CRLF in classes/SObjectDesc.cls.
+     [exec] The file will have its original line endings in your working directory.
+     [exec] warning: LF will be replaced by CRLF in classes/SObjectDesc.cls-meta.xml.
+     [exec] The file will have its original line endings in your working directory.
+     [exec] warning: LF will be replaced by CRLF in classes/SpeakerControllerExtension.cls.
+     [exec] The file will have its original line endings in your working directory.
+     [exec] warning: LF will be replaced by CRLF in classes/SpeakerControllerExtension.cls-meta.xml.
+     [exec] The file will have its original line endings in your working directory.
+     [exec] warning: LF will be replaced by CRLF in classes/StringArrayTest.cls.
+     [exec] The file will have its original line endings in your working directory.
+     [exec] warning: LF will be replaced by CRLF in classes/StringArrayTest.cls-meta.xml.
+     [exec] The file will have its original line endings in your working directory.
+     [exec] warning: LF will be replaced by CRLF in classes/TemperatureConverter.cls.
+     [exec] The file will have its original line endings in your working directory.
+     [exec] warning: LF will be replaced by CRLF in classes/TemperatureConverter.cls-meta.xml.
+     [exec] The file will have its original line endings in your working directory.
+     [exec] warning: LF will be replaced by CRLF in classes/TemperatureConverterTest.cls.
+     [exec] The file will have its original line endings in your working directory.
+     [exec] warning: LF will be replaced by CRLF in classes/TemperatureConverterTest.cls-meta.xml.
+     [exec] The file will have its original line endings in your working directory.
+     [exec] warning: LF will be replaced by CRLF in classes/TestAccountDeletion.cls.
+     [exec] The file will have its original line endings in your working directory.
+     [exec] warning: LF will be replaced by CRLF in classes/TestAccountDeletion.cls-meta.xml.
+     [exec] The file will have its original line endings in your working directory.
+     [exec] warning: LF will be replaced by CRLF in classes/TestPickListController.cls.
+     [exec] The file will have its original line endings in your working directory.
+     [exec] warning: LF will be replaced by CRLF in classes/TestPickListController.cls-meta.xml.
+     [exec] The file will have its original line endings in your working directory.
+     [exec] warning: LF will be replaced by CRLF in classes/TestRestrictContactByName.cls.
+     [exec] The file will have its original line endings in your working directory.
+     [exec] warning: LF will be replaced by CRLF in classes/TestRestrictContactByName.cls-meta.xml.
+     [exec] The file will have its original line endings in your working directory.
+     [exec] warning: LF will be replaced by CRLF in classes/TestVerifyDate.cls.
+     [exec] The file will have its original line endings in your working directory.
+     [exec] warning: LF will be replaced by CRLF in classes/TestVerifyDate.cls-meta.xml.
+     [exec] The file will have its original line endings in your working directory.
+     [exec] warning: LF will be replaced by CRLF in classes/VerifyDate.cls.
+     [exec] The file will have its original line endings in your working directory.
+     [exec] warning: LF will be replaced by CRLF in classes/VerifyDate.cls-meta.xml.
+     [exec] The file will have its original line endings in your working directory.
+     [exec] warning: LF will be replaced by CRLF in classes/calculatorServices.cls.
+     [exec] The file will have its original line endings in your working directory.
+     [exec] warning: LF will be replaced by CRLF in classes/calculatorServices.cls-meta.xml.
+     [exec] The file will have its original line endings in your working directory.
+     [exec] warning: LF will be replaced by CRLF in package.xml.
+     [exec] The file will have its original line endings in your working directory.
+     [exec] warning: LF will be replaced by CRLF in pages/AccountEdit.page.
+     [exec] The file will have its original line endings in your working directory.
+     [exec] warning: LF will be replaced by CRLF in pages/AccountEdit.page-meta.xml.
+     [exec] The file will have its original line endings in your working directory.
+     [exec] warning: LF will be replaced by CRLF in pages/AccountManagement.page.
+     [exec] The file will have its original line endings in your working directory.
+     [exec] warning: LF will be replaced by CRLF in pages/AccountManagement.page-meta.xml.
+     [exec] The file will have its original line endings in your working directory.
+     [exec] warning: LF will be replaced by CRLF in pages/AccountSummary.page.
+     [exec] The file will have its original line endings in your working directory.
+     [exec] warning: LF will be replaced by CRLF in pages/AccountSummary.page-meta.xml.
+     [exec] The file will have its original line endings in your working directory.
+     [exec] warning: LF will be replaced by CRLF in pages/Campaign_Management.page.
+     [exec] The file will have its original line endings in your working directory.
+     [exec] warning: LF will be replaced by CRLF in pages/Campaign_Management.page-meta.xml.
+     [exec] The file will have its original line endings in your working directory.
+     [exec] warning: LF will be replaced by CRLF in pages/ContactView.page.
+     [exec] The file will have its original line endings in your working directory.
+     [exec] warning: LF will be replaced by CRLF in pages/ContactView.page-meta.xml.
+     [exec] The file will have its original line endings in your working directory.
+     [exec] warning: LF will be replaced by CRLF in pages/CreateChildOpportunties.page.
+     [exec] The file will have its original line endings in your working directory.
+     [exec] warning: LF will be replaced by CRLF in pages/CreateChildOpportunties.page-meta.xml.
+     [exec] The file will have its original line endings in your working directory.
+     [exec] warning: LF will be replaced by CRLF in pages/CreateContact.page.
+     [exec] The file will have its original line endings in your working directory.
+     [exec] warning: LF will be replaced by CRLF in pages/CreateContact.page-meta.xml.
+     [exec] The file will have its original line endings in your working directory.
+     [exec] warning: LF will be replaced by CRLF in pages/Demo.page.
+     [exec] The file will have its original line endings in your working directory.
+     [exec] warning: LF will be replaced by CRLF in pages/Demo.page-meta.xml.
+     [exec] The file will have its original line endings in your working directory.
+     [exec] warning: LF will be replaced by CRLF in pages/Demo1.page.
+     [exec] The file will have its original line endings in your working directory.
+     [exec] warning: LF will be replaced by CRLF in pages/Demo1.page-meta.xml.
+     [exec] The file will have its original line endings in your working directory.
+     [exec] warning: LF will be replaced by CRLF in pages/DisplayImage.page.
+     [exec] The file will have its original line endings in your working directory.
+     [exec] warning: LF will be replaced by CRLF in pages/DisplayImage.page-meta.xml.
+     [exec] The file will have its original line endings in your working directory.
+     [exec] warning: LF will be replaced by CRLF in pages/DisplayUserInfo.page.
+     [exec] The file will have its original line endings in your working directory.
+     [exec] warning: LF will be replaced by CRLF in pages/DisplayUserInfo.page-meta.xml.
+     [exec] The file will have its original line endings in your working directory.
+     [exec] warning: LF will be replaced by CRLF in pages/FlowPage.page.
+     [exec] The file will have its original line endings in your working directory.
+     [exec] warning: LF will be replaced by CRLF in pages/FlowPage.page-meta.xml.
+     [exec] The file will have its original line endings in your working directory.
+     [exec] warning: LF will be replaced by CRLF in pages/HotelMap.page.
+     [exec] The file will have its original line endings in your working directory.
+     [exec] warning: LF will be replaced by CRLF in pages/HotelMap.page-meta.xml.
+     [exec] The file will have its original line endings in your working directory.
+     [exec] warning: LF will be replaced by CRLF in pages/Job_Candidate_Help.page.
+     [exec] The file will have its original line endings in your working directory.
+     [exec] warning: LF will be replaced by CRLF in pages/Job_Candidate_Help.page-meta.xml.
+     [exec] The file will have its original line endings in your working directory.
+     [exec] warning: LF will be replaced by CRLF in pages/MasterChild.page.
+     [exec] The file will have its original line endings in your working directory.
+     [exec] warning: LF will be replaced by CRLF in pages/MasterChild.page-meta.xml.
+     [exec] The file will have its original line endings in your working directory.
+     [exec] warning: LF will be replaced by CRLF in pages/OppView.page.
+     [exec] The file will have its original line endings in your working directory.
+     [exec] warning: LF will be replaced by CRLF in pages/OppView.page-meta.xml.
+     [exec] The file will have its original line endings in your working directory.
+     [exec] warning: LF will be replaced by CRLF in pages/Pagination.page.
+     [exec] The file will have its original line endings in your working directory.
+     [exec] warning: LF will be replaced by CRLF in pages/Pagination.page-meta.xml.
+     [exec] The file will have its original line endings in your working directory.
+     [exec] warning: LF will be replaced by CRLF in pages/SpeakerForm.page.
+     [exec] The file will have its original line endings in your working directory.
+     [exec] warning: LF will be replaced by CRLF in pages/SpeakerForm.page-meta.xml.
+     [exec] The file will have its original line endings in your working directory.
+     [exec] warning: LF will be replaced by CRLF in pages/TestPickList.page.
+     [exec] The file will have its original line endings in your working directory.
+     [exec] warning: LF will be replaced by CRLF in pages/TestPickList.page-meta.xml.
+     [exec] The file will have its original line endings in your working directory.
+     [exec] warning: LF will be replaced by CRLF in staticresources/GetAnimalLocator.resource-meta.xml.
+     [exec] The file will have its original line endings in your working directory.
+     [exec] warning: LF will be replaced by CRLF in staticresources/GetAnimalResource.resource-meta.xml.
+     [exec] The file will have its original line endings in your working directory.
+     [exec] warning: LF will be replaced by CRLF in triggers/AccountAddressTrigger.trigger.
+     [exec] The file will have its original line endings in your working directory.
+     [exec] warning: LF will be replaced by CRLF in triggers/AccountAddressTrigger.trigger-meta.xml.
+     [exec] The file will have its original line endings in your working directory.
+     [exec] warning: LF will be replaced by CRLF in triggers/AccountDeletion.trigger.
+     [exec] The file will have its original line endings in your working directory.
+     [exec] warning: LF will be replaced by CRLF in triggers/AccountDeletion.trigger-meta.xml.
+     [exec] The file will have its original line endings in your working directory.
+     [exec] warning: LF will be replaced by CRLF in triggers/AccountProcessor.trigger.
+     [exec] The file will have its original line endings in your working directory.
+     [exec] warning: LF will be replaced by CRLF in triggers/AccountProcessor.trigger-meta.xml.
+     [exec] The file will have its original line endings in your working directory.
+     [exec] warning: LF will be replaced by CRLF in triggers/AccountTrigger.trigger.
+     [exec] The file will have its original line endings in your working directory.
+     [exec] warning: LF will be replaced by CRLF in triggers/AccountTrigger.trigger-meta.xml.
+     [exec] The file will have its original line endings in your working directory.
+     [exec] warning: LF will be replaced by CRLF in triggers/ClosedOpportunityTrigger.trigger.
+     [exec] The file will have its original line endings in your working directory.
+     [exec] warning: LF will be replaced by CRLF in triggers/ClosedOpportunityTrigger.trigger-meta.xml.
+     [exec] The file will have its original line endings in your working directory.
+     [exec] warning: LF will be replaced by CRLF in triggers/DifferenceMonth.trigger.
+     [exec] The file will have its original line endings in your working directory.
+     [exec] warning: LF will be replaced by CRLF in triggers/DifferenceMonth.trigger-meta.xml.
+     [exec] The file will have its original line endings in your working directory.
+     [exec] warning: LF will be replaced by CRLF in triggers/EmailToOwner.trigger.
+     [exec] The file will have its original line endings in your working directory.
+     [exec] warning: LF will be replaced by CRLF in triggers/EmailToOwner.trigger-meta.xml.
+     [exec] The file will have its original line endings in your working directory.
+     [exec] warning: LF will be replaced by CRLF in triggers/LockAccount.trigger.
+     [exec] The file will have its original line endings in your working directory.
+     [exec] warning: LF will be replaced by CRLF in triggers/LockAccount.trigger-meta.xml.
+     [exec] The file will have its original line endings in your working directory.
+     [exec] warning: LF will be replaced by CRLF in triggers/RejectDoubleBooking.trigger.
+     [exec] The file will have its original line endings in your working directory.
+     [exec] warning: LF will be replaced by CRLF in triggers/RejectDoubleBooking.trigger-meta.xml.
+     [exec] The file will have its original line endings in your working directory.
+     [exec] warning: LF will be replaced by CRLF in triggers/RestrictContactByName.trigger.
+     [exec] The file will have its original line endings in your working directory.
+     [exec] warning: LF will be replaced by CRLF in triggers/RestrictContactByName.trigger-meta.xml.
+     [exec] The file will have its original line endings in your working directory.
+     [exec] warning: LF will be replaced by CRLF in triggers/RollupTarget.trigger.
+     [exec] The file will have its original line endings in your working directory.
+     [exec] warning: LF will be replaced by CRLF in triggers/RollupTarget.trigger-meta.xml.
+     [exec] The file will have its original line endings in your working directory.
+     [exec] warning: LF will be replaced by CRLF in triggers/SendConfirmationEmail.trigger.
+     [exec] The file will have its original line endings in your working directory.
+     [exec] warning: LF will be replaced by CRLF in triggers/SendConfirmationEmail.trigger-meta.xml.
+     [exec] The file will have its original line endings in your working directory.
+     [exec] warning: LF will be replaced by CRLF in triggers/Trigger1.trigger.
+     [exec] The file will have its original line endings in your working directory.
+     [exec] warning: LF will be replaced by CRLF in triggers/Trigger1.trigger-meta.xml.
+     [exec] The file will have its original line endings in your working directory.
+     [exec] warning: LF will be replaced by CRLF in triggers/checkAttachment.trigger.
+     [exec] The file will have its original line endings in your working directory.
+     [exec] warning: LF will be replaced by CRLF in triggers/checkAttachment.trigger-meta.xml.
+     [exec] The file will have its original line endings in your working directory.
+     [exec] warning: LF will be replaced by CRLF in triggers/deleteValue.trigger.
+     [exec] The file will have its original line endings in your working directory.
+     [exec] warning: LF will be replaced by CRLF in triggers/deleteValue.trigger-meta.xml.
+     [exec] The file will have its original line endings in your working directory.
+     [exec] warning: LF will be replaced by CRLF in triggers/testing.trigger.
+     [exec] The file will have its original line endings in your working directory.
+     [exec] warning: LF will be replaced by CRLF in triggers/testing.trigger-meta.xml.
+     [exec] The file will have its original line endings in your working directory.
+     [echo] git commit
+     [exec] [master fc950e8] Backup
+     [exec]  1 file changed, 2 insertions(+)
+     [echo] git push
+     [exec] To https://github.com/khandelwalsandeep/Salesforce_Backup.git
+     [exec]    3636d30..fc950e8  master -> master
+
+[8mha:////4DgPKp07tbmQ9bmKoJLt3ocLUq9AQLoJiMakyJqdAmfiAAAAYB+LCAAAAAAAAP9b85aBtbiIQSGjNKU4P0+vJLE4u1gvPjGvRM8xr8S/tCQ5PzfVL78ktUuDM0uMry+HiYGhoohBCqo8OT+vOD8nVc8ZQoMUMkAAI0hhAQAUXUdTXgAAAA==[0mBUILD SUCCESSFUL
+Total time: 20 seconds
+Finished: SUCCESS

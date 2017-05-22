@@ -1,0 +1,18 @@
+Started by user [8mha:////4PhywhyixIxq/DiD822LV27ksyqHhUY4NJ2Mu+UWQy0+AAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzWEgZu/dLi1CL9xJTczDwAj6GcLcAAAAA=[0madmin
+Building in workspace C:\Users\Sandeep665\.jenkins\workspace\Daily Backup Salesforce
+Cloning the remote Git repository
+Cloning repository https://github.com/khandelwalsandeep/Salesforce_Backup.git
+ > git.exe init C:\Users\Sandeep665\.jenkins\workspace\Daily Backup Salesforce # timeout=10
+Fetching upstream changes from https://github.com/khandelwalsandeep/Salesforce_Backup.git
+ > git.exe --version # timeout=10
+ > git.exe fetch --tags --progress https://github.com/khandelwalsandeep/Salesforce_Backup.git +refs/heads/*:refs/remotes/origin/*
+ > git.exe config remote.origin.url https://github.com/khandelwalsandeep/Salesforce_Backup.git # timeout=10
+ > git.exe config --add remote.origin.fetch +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git.exe config remote.origin.url https://github.com/khandelwalsandeep/Salesforce_Backup.git # timeout=10
+Fetching upstream changes from https://github.com/khandelwalsandeep/Salesforce_Backup.git
+ > git.exe fetch --tags --progress https://github.com/khandelwalsandeep/Salesforce_Backup.git +refs/heads/*:refs/remotes/origin/*
+ > git.exe rev-parse "refs/remotes/origin/master^{commit}" # timeout=10
+ > git.exe rev-parse "refs/remotes/origin/origin/master^{commit}" # timeout=10
+ > git.exe rev-parse "origin/master^{commit}" # timeout=10
+ERROR: Couldn't find any revision to build. Verify the repository and branch configuration for this job.
+[8mha:////4CzeWK+9UneGzB65/uO6V1KN36vIc+qF/E1WLVPVoRMLAAAAWB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P08vOT+vOD8nVc8DzHWtSE4tKMnMz/PLL0ldFVf2c+b/lb5MDAwVRQxSaBqcITRIIQMEMIIUFgAAckCEiWAAAAA=[0mFinished: FAILURE

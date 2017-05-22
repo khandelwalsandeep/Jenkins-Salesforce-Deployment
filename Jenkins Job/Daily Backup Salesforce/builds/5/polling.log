@@ -1,0 +1,8 @@
+Started on 22 May, 2017 9:06:00 PM
+Using strategy: Default
+[poll] Last Built Revision: Revision 3636d30fe2747d0286806ad17f07ebb2d1236773 (refs/remotes/origin/master)
+ > git.exe ls-remote -h https://github.com/khandelwalsandeep/Salesforce_Backup.git # timeout=10
+Found 1 remote heads on https://github.com/khandelwalsandeep/Salesforce_Backup.git
+[poll] Latest remote head revision on refs/heads/master is: fc950e861b0fbf8813f794363842ba85fdedd859
+Done. Took 1.2 sec
+Changes found
